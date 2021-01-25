@@ -1,0 +1,29 @@
+<!-- определяем формгрупппу формы и создаем инпуты с привязкой по формконтролНейм-->
+<h3 style="margin-left: -15px;">{{!studentId && studentId !== 0 ? 'Форма добавления' : 'Форма редактирования'}}</h3>
+<form [formGroup]="studentForm">
+  <div class="row mb-2">
+    <input type="text" placeholder="Фамилия" class="form-control col-2 mr-2" formControlName="lastname">
+    <input type="text" placeholder="Имя" class="form-control col-2 mr-2" formControlName="firstname">
+    <input type="text" placeholder="Отчество" class="form-control col-2 mr-2" formControlName="middlename">
+
+    <input type="text" placeholder="Телефон" class="form-control col-2 mr-2" formControlName="phone">
+    <input type="text" placeholder="E-mail" class="form-control col-2 mr-2" formControlName="email">
+  </div>
+
+  <div class="row mb-2">
+    <input type="text" placeholder="Номер группы" class="form-control col-3 mr-2" formControlName="group">
+    <input type="text" placeholder="Направление" class="form-control col-3 mr-2" formControlName="direction">
+    <input type="date" placeholder="Дата рождения" class="form-control col-3 mr-2" formControlName="birthDay">
+  </div>
+
+  <!-- если профиль добавляют -->
+  <button style="margin-left: -15px;" type="submit" class="btn btn-success" (click)="onAddStudent()" [disabled]="studentForm.invalid"
+    *ngIf="!studentId && studentId !== 0">Добавить</button>
+
+  <!-- если профиль редактируют -->
+  <button style="margin-left: -15px;" type="submit" class="btn btn-success mr-2" (click)="onEditStudent()" [disabled]="studentForm.invalid"
+    *ngIf="studentId || studentId === 0">Сохранить</button>
+  <button type="submit" class="btn btn-danger" (click)="onDeleteStudent()"
+    *ngIf="studentId || studentId === 0">Удалить</button>
+
+</form>

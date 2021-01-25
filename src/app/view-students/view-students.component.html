@@ -1,0 +1,37 @@
+<div class="container mt-4" style="margin-bottom: 150px;">
+
+  <div class="mb-4">
+    <app-student-add [studentId]="edittingId" (studentChanges)="onStudentChanges()"></app-student-add>
+    <!-- это добавление студентов и их редактирование -->
+    <!-- на вход мы передаем айди редактируемого студента -->
+    <!-- если происходят какие-то изменения, то мы на них реагируем onStudentChanges -->
+  </div>
+
+  <div class="pt-4">
+    <div class="row flex-column mb-4">
+      <h3>Фильтрация</h3>
+      <!-- поля для фильтрации -->
+      <div class="d-flex">
+        <input type="text" placeholder="По фамилии" class="form-control col-md-3 mr-2" [(ngModel)]='lastnameParam'>
+        <input type="text" placeholder="По номеру группы" class="form-control col-md-2 mr-2" [(ngModel)]='groupParam'>
+        <input type="text" placeholder="По направлению" class="form-control col-md-3 mr-2" [(ngModel)]='directionParam'>
+      </div>
+    </div>
+		<!-- вывод студентов с применением пайпов -->
+    <div class="row mb-2" *ngFor='let student of students
+            | sort : "lastname" : true
+            | filter : groupParam : "group"
+            | filter : directionParam : "direction"
+            | filter : lastnameParam : "lastname"
+				'>
+      <div class="col-md-3"> {{ student | initials }} </div>
+      <div class="col-md-2 ml-2"> {{ student.group }} </div>
+      <div class="col-md-3 ml-2"> {{ student.direction }} </div>
+
+      <!-- устанавливаем на клик айди редактируемого профиля -->
+      <div class="col-3">
+        <button class="btn btn-warning" (click)="edittingId = student.id">Редактировать</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,136 @@
+{
+  "students": [
+    {
+      "firstname": "Сергей",
+      "lastname": "Пешкин",
+      "middlename": "Вадимович",
+      "phone": "(800) 777-77-77",
+      "email": "peshkin90@mail.ru",
+      "group": "171-109",
+      "direction": "Тестировщик",
+      "birthDay": "1990-12-24",
+      "id": 1
+    },
+    {
+      "firstname": "Александр",
+      "lastname": "Николаев",
+      "middlename": "Алексеевич",
+      "phone": "(995) 123-32-21",
+      "email": "nikolaev95@ya.ru",
+      "group": "181-222",
+      "direction": "Аналитик",
+      "birthDay": "1995-10-13",
+      "id": 2
+    },
+    {
+      "firstname": "Афанасий",
+      "lastname": "Должанский",
+      "middlename": "Петрович",
+      "phone": "(800) 555-63-63",
+      "email": "dolzhanski78@gmail.com",
+      "group": "191-321",
+      "direction": "Архитектор",
+      "birthDay": "1978-08-09",
+      "id": 3
+    },
+    {
+      "firstname": "Семен",
+      "lastname": "Чичваркин",
+      "middlename": "Максимович",
+      "phone": "(917) 816-22-07",
+      "email": "chichvarkin85@ya.ru",
+      "group": "201-141",
+      "direction": "Дизайнер",
+      "birthDay": "1985-05-17",
+      "id": 4
+    },
+    {
+      "firstname": "Игорь",
+      "lastname": "Дядько",
+      "middlename": "Дмитриевич",
+      "phone": "(996) 757-94-73",
+      "email": "dyadko91@mail.ru",
+      "group": "171-109",
+      "direction": "Тестировщик",
+      "birthDay": "1991-03-28",
+      "id": 5
+    },
+    {
+      "firstname": "Илья",
+      "lastname": "Служил",
+      "middlename": "Сергеевич",
+      "phone": "(916) 759-51-41",
+      "email": "sluzhil98@google.com",
+      "group": "181-222",
+      "direction": "Аналитик",
+      "birthDay": "1999-09-01",
+      "id": 6
+    },
+    {
+      "firstname": "Матвей",
+      "lastname": "Архипов",
+      "middlename": "Алексеевич",
+      "phone": "(917) 735-40-60",
+      "email": "arhipov87@mail.ru",
+      "group": "191-321",
+      "direction": "Архитектор",
+      "birthDay": "1987-01-03",
+      "id": 7
+    },
+    {
+      "firstname": "Светлана",
+      "lastname": "Смирнова",
+      "middlename": "Максимовна",
+      "phone": "(927) 401-00-07",
+      "email": "smirnova95@ya.ru",
+      "group": "201-141",
+      "direction": "Дизайнер",
+      "birthDay": "1995-03-05",
+      "id": 8
+    },
+    {
+      "firstname": "Валерий",
+      "lastname": "Белобородов",
+      "middlename": "Дмитриевич",
+      "phone": "(927) 223-32-23",
+      "email": "beloborodov02@mail.ru",
+      "group": "171-109",
+      "direction": "Тестировщик",
+      "birthDay": "2002-05-07",
+      "id": 9
+    },
+    {
+      "firstname": "Мария",
+      "lastname": "Жмых",
+      "middlename": "Андреевна",
+      "phone": "(917) 617-44-37",
+      "email": "zhmih94@mail.ru",
+      "group": "181-222",
+      "direction": "Аналитик",
+      "birthDay": "1994-12-21",
+      "id": 10
+    },
+    {
+      "firstname": "Юрий",
+      "lastname": "Яковлев",
+      "middlename": "Васильевич",
+      "phone": "(899) 455-45-54",
+      "email": "yakovlev78@gmail.com",
+      "group": "191-321",
+      "direction": "Архитектор ",
+      "birthDay": "1978-04-18",
+      "id": 11
+    },
+    {
+      "firstname": "Ирина",
+      "lastname": "Ковалева",
+      "middlename": "Станиславовна",
+      "phone": "(915) 711-17-71",
+      "email": "kovaleva93@mail.ru",
+      "group": "201-141",
+      "direction": "Дизайнер",
+      "birthDay": "1993-10-21",
+      "id": 12
+    }
+  ]
+}
